@@ -1,20 +1,18 @@
-# Flask
 backend/__pycache__/
-*.pyc
-*.pyo
-instance/
-.env
+backend/*.pyc
+backend/*.pyo
+backend/instance/
+backend/.env
 
-# Angular
-node_modules/
-/dist/
-npm-debug.log
-yarn-error.log
-yarn.lock
+frontend/node_modules/
+frontend/dist/
+frontend/npm-debug.log
+frontend/yarn-error.log
+frontend/yarn.lock
 
-# 
-*.log
-*.swp
-.DS_Store
 .idea/
-frontend/.vscode/
+.DS_Store
+
+*.sublime-workspace
+*.sublime-project
+Thumbs.db
