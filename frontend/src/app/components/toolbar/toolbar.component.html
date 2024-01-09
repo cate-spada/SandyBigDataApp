@@ -1,0 +1,16 @@
+<mat-toolbar class="title-toolbar"  color="primary">
+  <mat-toolbar-row style="min-height: 100px; padding: 40px" >
+    <span class="title-center">Applicazione Big Data: analisi dati su disastri naturali</span>
+  </mat-toolbar-row>
+</mat-toolbar>
+<nav mat-tab-nav-bar >
+  <a mat-tab-link *ngFor="let link of links; index as i"
+     [href]="link"
+     (click)="activeLink = link"
+     > {{titles[i]}} </a>
+</nav>
+<br>
+
+
+
+

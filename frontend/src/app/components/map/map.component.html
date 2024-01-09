@@ -1,0 +1,63 @@
+<body>
+  <div class="row">
+      <div class="column left">
+        <mat-selection-list [multiple]="false">
+          <div mat-subheader>Scegli una query:</div>
+          <mat-list-option
+          (click) = "onClickSubmit('http://localhost:5000/query2', 'mapPin')">
+          Luoghi avvistamento uragano
+          </mat-list-option>
+          <mat-list-option
+          (click) = "onClickSubmit('http://localhost:5000/query3', 'mapPin')">
+          Luoghi con allerta
+          </mat-list-option>
+          <mat-list-option
+          (click) = "onClickSubmit('http://localhost:5000/query4', 'mapPin')">
+          Luoghi apertura rifugi
+          </mat-list-option>
+          <mat-list-option
+          (click) = "onClickSubmit('http://localhost:5000/query5', 'mapPin')">
+          Luogo con maggior numero di rifugi
+          </mat-list-option>
+          <mat-list-option
+          (click) = "onClickSubmit('http://localhost:5000/query6', 'mapPin')">
+          Luogo con maggior numero di avvistamenti
+          </mat-list-option>
+          <mat-list-option
+          (click) = "onClickSubmit('http://localhost:5000/query7', 'mapPin')">
+          Luoghi con allerta in cui è stato avvistato l'uragano
+          </mat-list-option>
+          <mat-list-option
+          (click) = "onClickSubmit('http://localhost:5000/query8', 'mapPin')">
+          Luoghi con danni ai mezzi di trasporto
+          </mat-list-option>
+          <mat-list-option
+          (click) = "onClickSubmit('http://localhost:5000/query10', 'mapPin')">
+          Per ogni luogo numero di feriti e vittime
+          </mat-list-option>
+          <mat-list-option
+          (click) = "onClickSubmit('http://localhost:5000/query11', 'mapPin')">
+          Luogo con maggior numero di vittime
+          </mat-list-option>
+          <mat-list-option
+          (click) = "onClickSubmit('http://localhost:5000/query12', 'mapPin')">
+          Edifici noti coinvolti
+          </mat-list-option>
+        </mat-selection-list>
+      </div>
+      <div class="column middle" >
+        <script src="//cdn.amcharts.com/lib/5/index.js"></script>
+        <script src="//cdn.amcharts.com/lib/5/percent.js"></script>
+        <script src="//cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+        <script src="https://cdn.amcharts.com/lib/5/map.js"></script>
+        <script src="https://cdn.amcharts.com/lib/5/geodata/continentsLow.js"></script>
+        <div id="chartdiv" ></div>
+        <br>
+        <br>
+        <br>
+        <p *ngFor="let item of ris">
+          <li>&nbsp; {{item.where}}</li>
+        </p>
+      </div>
+  </div>
+</body>

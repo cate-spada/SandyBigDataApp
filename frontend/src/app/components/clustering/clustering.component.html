@@ -1,0 +1,22 @@
+<body>
+  <div class="row">
+      <div class="column left">
+        <mat-selection-list [multiple]="false">
+          <div mat-subheader>Scegli una query:</div>
+          <mat-list-option
+          (click) = "query('http://localhost:5000/query16', 'map')">
+          Rilevamento di sotto-eventi
+          </mat-list-option>
+        </mat-selection-list>
+      </div>
+      <div class="column middle" >
+        <script src="//cdn.amcharts.com/lib/5/index.js"></script>
+        <script src="//cdn.amcharts.com/lib/5/percent.js"></script>
+        <script src="//cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+        <script src="https://cdn.amcharts.com/lib/5/map.js"></script>
+        <script src="https://cdn.amcharts.com/lib/5/geodata/continentsLow.js"></script>
+        <div id="chartdiv" ></div>
+      </div>
+  </div>
+</body>
+

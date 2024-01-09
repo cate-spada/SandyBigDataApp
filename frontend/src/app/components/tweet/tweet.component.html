@@ -1,0 +1,27 @@
+<body>
+  <div class="row">
+      <div class="column left" >
+        <mat-selection-list [multiple]="false" >
+         <div mat-subheader>Scegli una query:</div>
+          <mat-list-option  (click) = "onClickSubmit('http://localhost:5000/query1', 'pie')">
+            Numero tweet per tipologia (Raccomandazione o avvertimento)
+          </mat-list-option>
+          <mat-list-option (click) = "onClickSubmit('http://localhost:5000/query14', 'pie')">
+            Numero tweet per tipologia di struttura
+          </mat-list-option>
+          <mat-list-option (click) = "onClickSubmit('http://localhost:5000/query15', 'column')">
+            Tipologia di tweet (persone o infrastrutture) con maggiore occorrenza per stato
+          </mat-list-option>
+          </mat-selection-list>
+      </div>
+      <div class="column middle" >
+          <script src="//cdn.amcharts.com/lib/5/index.js"></script>
+          <script src="//cdn.amcharts.com/lib/5/percent.js"></script>
+          <script src="//cdn.amcharts.com/lib/5/themes/Animated.js"></script>
+          <script src="https://cdn.amcharts.com/lib/5/map.js"></script>
+          <script src="https://cdn.amcharts.com/lib/5/geodata/continentsLow.js"></script>
+          <div id="chartdiv" ></div>
+      </div>
+  </div>
+</body>
+
