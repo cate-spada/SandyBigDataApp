@@ -1,6 +1,6 @@
 # SandyBigDataApp
 
-The following project was realised as a project for the course Modelling and Techniques for Big Data delivered as part of the bachelor's degree course in computer engineering.
+The following project was realised as a project for the course Modelling and Techniques for Big Data delivered as part of the Master's Degree course in Computer Science.
 
 Description:
 
