@@ -1,20 +1,20 @@
-# File specifici a Flask
-__pycache__/
+# Flask
+backend/__pycache__/
 *.pyc
 *.pyo
 instance/
 .env
 
-# File specifici ad Angular
+# Angular
 node_modules/
 /dist/
 npm-debug.log
 yarn-error.log
 yarn.lock
 
-# Altri file generati o sensibili
+# 
 *.log
 *.swp
 .DS_Store
 .idea/
-.vscode/
+frontend/.vscode/
